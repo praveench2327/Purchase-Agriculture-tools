@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 500px;
+        background: rgb(83, 120, 232);
+    }
+    .main{
+        padding: 10px 20px;
+        width: 350px;
+        color: whitesmoke;
+        border-radius: 15px;
+    }
+    .main h1{
+      font-size: 37px;
+      text-align: center;
+    }
+    .input-box{
+        width: 100%;
+        height: 45px;
+        margin: 30px 0;
+    }
+    .input-box input {
+        height: 100%;
+        width: 100%;
+        background: transparent;
+        border-radius: 20px;
+        padding: 5px ;
+    }
+    .input-box input ::placeholder{
+        color: azure;
+    }
+    .forgot{
+        display: flex;
+        justify-content: space-between;
+        margin: -10px 0 15px;
+    }
+    .forgot a{
+        color: rgb(18, 80, 179);
+        text-decoration: none;
+    }
+    .forgot a:hover{
+        text-decoration: underline;
+    }
+    .main .btn{
+        width: 100%;
+        height: 50px;
+        border-radius: 20px;
+        cursor: pointer;
+    }
+    .register{
+        font-size: 16px;
+        text-align: center;
+        margin-top: 10px;
+    }
+    .register a {
+        text-decoration: none;
+    }
+    .register a:hover{
+        text-decoration: underline;
+    }
+</style>
+<body>
+   <div class="main">
+    <h1>Login</h1>
+     <div class="input-box">
+       <input type="text" placeholder="Username" id ="Username">
+     </div>
+     <div class="input-box">
+        <input type="password" id = "password" placeholder="password">
+      </div>
+      <div class="forgot">
+        <label>
+            <input type="checkbox">Remember Me
+        </label>
+        <a href="#">Forgot password?</a>
+      </div>
+        <a href="index1.html" style="text-decoration: none;">
+            <button type="submit" class="btn">Login</button>
+        </a>
+      <div class="register">
+         <p>Don't have an account?
+            <a href="#">Register</a>
+         </p>
+      </div>
+   </div>
+</body>
+</html>
